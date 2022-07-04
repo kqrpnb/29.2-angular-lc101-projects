@@ -6,7 +6,7 @@
     color: #3c79b8;
 }
 
-h3 {
+h3, h1 {
     text-align: center;
 }
 
@@ -15,4 +15,10 @@ img {
     height: auto;
     display: block;
     margin: auto;
+}
+
+.warning {
+    color:limegreen;
+    font-size: large;
+    text-decoration: underline;
 }
