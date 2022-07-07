@@ -12,4 +12,19 @@ export class MovieListComponent implements OnInit {
 
    ngOnInit() {
    }
+
+   addMovie(newTitle: string) {
+      if (!this.movies.includes(newTitle)){
+      this.movies.push(newTitle);
+      }
+   }
+
+   addMovie2(newTitle: string) {
+      let movieExists = this.movies.find(element => {
+         return element.toLowerCase() === newTitle.toLowerCase();
+      });
+      if (!movieExists) {
+         this.movies.push(newTitle);
+      }
+   }
 }
